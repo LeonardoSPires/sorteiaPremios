@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteador de números</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main> 
+        <section class="container">
+            <div class="sorteio">
+                <h1>Sortei e Ganhe</h1>
+                <img class="dado-seis" src="./img/dado6.png" alt="dado-seis">
+                <p class="numero-sorteado">?</p>
+                <h2>
+                    Tente a sorte e ganhe um super prêmio.
+                </h2>
+                <p class="premio-sorteado">Parabéns você acaba de ganhar um(a): <span class="premio">prêmio</span></p>
+                <button class="btn-sorteio" onclick="generateNumber()"> Sortear</button>
+                <p class="premios">Premios:</p>
+                <ol class="lista-premio">
+                    <li id="um">Celular</li>
+                    <li id="dois">Video Game</li>
+                    <li id="tres">Tv 65"</li>
+                    <li id="quatro">Moto</li>
+                    <li id="cinco">Carro</li>
+                    <li id="seis">Casa</li>
+                </ol>
+            </div>
+            
+        </section>
+    </main>
+</body>
+<script src="scripts.js"></script>
+</html>

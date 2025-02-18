@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    padding: 1rem 4rem;
+    background-image: radial-gradient(circle at 50% -20.71%, #de9c2c 0, #e5922a 8.33%, #ea852b 16.67%, #ee772d 25%, #f16731 33.33%, #f35436 41.67%, #f23c3c 50%, #f01843 58.33%, #ed004c 66.67%, #e90057 75%, #e30064 83.33%, #db0071 91.67%, #d10080 100%);
+}
+
+.sorteio {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid black ;
+    border-radius: 20px;
+    box-shadow: 10px 10px 15px #000;
+}
+.sorteio h1 {
+    color: rgb(46, 91, 176);
+    font-size: 3rem;
+    margin-top: 1rem;
+}
+.sorteio .dado-seis {
+    width: 120px;
+    height: 120px;
+}
+.sorteio .numero-sorteado{
+    width: 100px;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 2rem;
+}
+.sorteio h2 {
+    color: rgb(235, 237, 100);
+    font-size: 2rem;
+}
+.sorteio .premio-sorteado{
+    font-size: 2rem;
+    padding: 1.5rem;
+    color: #57d12b;
+    font-weight: bold;
+    display: none;
+}
+.sorteio .btn-sorteio {
+    width: 9rem;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 1rem;
+    font-weight: bold;
+    font-size: 1.3rem;
+    cursor: pointer;
+    background-color: #8de02d;
+    color: #fff;
+    box-shadow: 8px 8px 10px #000;
+}
+
+.sorteio .premios {
+    color: #000;
+    font-size: 2rem;
+    margin: .5rem;
+}
+.sorteio li {
+    color: #fff;
+    font-size: 1.5rem;
+}
