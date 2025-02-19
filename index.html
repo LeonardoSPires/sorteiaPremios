@@ -11,14 +11,16 @@
         <section class="container">
             <div class="sorteio">
                 <h1>Sortei e Ganhe</h1>
-                <img class="dado-seis" src="./img/dado6.png" alt="dado-seis">
+                <h2>Clique no dado e compre créditos, concorra a prêmios, o primeiro crédito é grátis! Temos: <b>celular</b>, <b>TV 65"</b>, <b>video game</b>, <b>moto</b>, <b>carro</b> e <b>casa</b>. </h2>
+                <img class="dado-seis" src="./img/dado6.png" alt="dado-seis" onclick="credito()">
                 <p class="numero-sorteado">?</p>
                 <h2>
-                    Tente a sorte e ganhe um super prêmio.
+                    Um número e gerado aleatoriamente entre 1 e 20, caso seja um numero premiado, voce ganha na hora um super premio!.
                 </h2>
-                <p class="premio-sorteado">Parabéns você acaba de ganhar um(a): <span class="premio">prêmio</span></p>
-                <button class="btn-sorteio" onclick="generateNumber()"> Sortear</button>
-                <p class="premios">Premios:</p>
+
+                <p class="premio-sorteado" id="premio-apagar"></p>
+                <button class="btn-sorteio" onclick="generateNumber()" id="btn-voltar"> Sortear</button>
+                
                 <ol class="lista-premio">
                     <li id="um">Celular</li>
                     <li id="dois">Video Game</li>

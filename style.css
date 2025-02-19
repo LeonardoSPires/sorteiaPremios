@@ -9,16 +9,16 @@
     justify-content: center;
     width: 100vw;
     height: 100vh;
-    padding: 1rem 4rem;
+    padding: 0rem 4rem;
     background-color: #2c2a2a;
 }
 
 .sorteio {
-    width: 60%;
-    height: 100%;
+    width: 70%;
+    height: 95%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     border: 1px solid black ;
     border-radius: 20px;
@@ -26,37 +26,44 @@
     background-image: radial-gradient(circle at 50% -20.71%, #de9c2c 0, #e5922a 8.33%, #ea852b 16.67%, #ee772d 25%, #f16731 33.33%, #f35436 41.67%, #f23c3c 50%, #f01843 58.33%, #ed004c 66.67%, #e90057 75%, #e30064 83.33%, #db0071 91.67%, #d10080 100%);
 }
 .sorteio h1 {
-    color: rgb(46, 91, 176);
-    font-size: 3rem;
-    margin-top: 1rem;
+    color: rgb(84, 236, 28);
+    font-size: 3.5rem;
+    margin-top: 2rem;
+    text-shadow: 5px 5px 10px #000;
 }
 .sorteio .dado-seis {
     width: 120px;
     height: 120px;
+    position: fixed;
+    left: 65%;
+    bottom: 5%;
+}
+.sorteio .dado-seis:hover {
+    width: 130px;
+    height: 130px;
 }
 .sorteio .numero-sorteado{
     width: 100px;
     padding: 1rem;
     margin: 1rem;
-    background-color: #000;
+    background-color: #301ea5;
     color: #fff;
     border-radius: 5px;
     text-align: center;
     font-size: 2rem;
 }
 .sorteio h2 {
+    padding: 1rem 10rem;
     color: rgb(235, 237, 100);
-    font-size: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
 }
-.sorteio .premio-sorteado{
-    font-size: 2rem;
-    padding: 1.5rem;
-    color: #57d12b;
-    font-weight: bold;
-    display: none;
+.sorteio h2 b {
+    color: rgb(237, 241, 32);
+    font-size: 1.8rem;
 }
 .sorteio .btn-sorteio {
-    width: 9rem;
+    width: 15rem;
     padding: 1rem;
     border-radius: 10px;
     margin: 1rem;
@@ -68,29 +75,42 @@
     box-shadow: 8px 8px 10px #000;
 }
 
-.sorteio .premios {
-    color: #000;
+.sorteio .premio-sorteado{
     font-size: 2rem;
-    margin: .5rem;
+    padding: 1.5rem;
+    color: #57d12b;
+    font-weight: bold;
+    display: none;
+    text-align: center;
+
 }
-.sorteio li {
-    color: #fff;
-    font-size: 1.5rem;
+
+
+.sorteio .lista-premio{
+    display: none;
 }
 
 /* Responsividade para dispositivos móveis */
-@media (max-width: 768px) {
+@media (max-width: 968px) {
     .sorteio {
         width: 90%;
+        height: 98%;
         padding: 1rem;
     }
 
+    .sorteio .dado-seis {
+        width: 120px;
+        height: 120px;
+        left: 80%;
+        bottom: 0%;
+    }
     .sorteio h1 {
         font-size: 2rem;
     }
 
     .sorteio h2 {
         font-size: 1.5rem;
+        padding: 1rem 2rem;
     }
 
     .sorteio .numero-sorteado {
@@ -99,7 +119,7 @@
     }
 
     .sorteio .btn-sorteio {
-        width: 80%;
+        width: 30%;
         font-size: 1.1rem;
     }
 
@@ -117,17 +137,22 @@
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 599px) {
     .sorteio {
         width: 90%;
     }
-
+    .sorteio .dado-seis {
+        width: 120px;
+        height: 120px;
+        bottom: 5%;
+    }
     .sorteio h1 {
         font-size: 1.8rem;
     }
 
     .sorteio h2 {
         font-size: 1.3rem;
+        padding: 1rem 3rem;
     }
 
     .sorteio .numero-sorteado {
@@ -136,7 +161,7 @@
     }
 
     .sorteio .btn-sorteio {
-        width: 100%;
+        width: 80%;
         font-size: 1.1rem;
     }
 
